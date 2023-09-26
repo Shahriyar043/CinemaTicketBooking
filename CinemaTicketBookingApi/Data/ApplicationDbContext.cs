@@ -9,24 +9,6 @@ namespace CinemaTicketBookingApi.Data
         {
         }
 
-        //private readonly string _connectionString; // Private field for the connection string
-
-        //public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration configuration)
-        //    : base(options)
-        //{
-        //    // Retrieve the connection string from the configuration
-        //    _connectionString = configuration.GetConnectionString("DefaultConnection");
-        //}
-
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    if (!optionsBuilder.IsConfigured)
-        //    {
-        //        // Use the connection string retrieved from the configuration
-        //        optionsBuilder.UseSqlServer(_connectionString);
-        //    }
-        //}
-
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
